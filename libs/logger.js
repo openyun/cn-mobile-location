@@ -1,3 +1,5 @@
+"use strict"
+
 const util = require('util')
 const events = require('events')
 const moment = require('moment')
