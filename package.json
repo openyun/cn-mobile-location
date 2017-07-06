@@ -1,0 +1,27 @@
+{
+  "name": "cn-mobile-location",
+  "version": "1.0.0",
+  "description": "china mobile phone number location",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openyun/cn-mobile-location.git"
+  },
+  "keywords": [
+    "mobile",
+    "location"
+  ],
+  "author": "Richie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openyun/cn-mobile-location/issues"
+  },
+  "homepage": "https://github.com/openyun/cn-mobile-location#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "moment": "^2.18.1"
+  }
+}
