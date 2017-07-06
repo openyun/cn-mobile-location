@@ -10,7 +10,7 @@ router.all('/:mobile', function(req, res, next) {
   if (!data) {
     res.jsonp(json(0, 'not found'))
   } else {
-    res.jsonp(json(0, 'success', data))
+    res.jsonp(json(1, 'success', data))
   }
   
 })
