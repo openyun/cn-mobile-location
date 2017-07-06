@@ -2,9 +2,9 @@
   "name": "cn-mobile-location",
   "version": "1.0.0",
   "description": "china mobile phone number location",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "npm test"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,12 @@
   },
   "homepage": "https://github.com/openyun/cn-mobile-location#readme",
   "dependencies": {
-    "express": "^4.15.3",
-    "moment": "^2.18.1"
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
   }
 }
