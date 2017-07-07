@@ -1,4 +1,4 @@
-"use strict"
+'use strict'
 
 var express = require('express')
 var path = require('path')
@@ -10,6 +10,7 @@ var bodyParser = require('body-parser')
 var index = require('./routes/index')
 var mobile = require('./routes/mobile')
 var json = require('./libs/json')
+var finder = require('./libs/finder')
 
 var app = express()
 
@@ -45,5 +46,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500)
   res.jsonp(json(0, err.status + ' ' + err.message))
 })
+
+// start finder
+finder()
 
 module.exports = app

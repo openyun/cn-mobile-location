@@ -1,10 +1,11 @@
-"use strict"
+'use strict'
 
 var fs = require('fs')
 
 var dataBuffer = null
+var file = __dirname + '/../data/phone.dat'
 
-var load = function (file) {
+var load = function () {
   dataBuffer = fs.readFileSync(file)
 }
 
@@ -49,7 +50,7 @@ var parse = function (str, mobile) {
 
 module.exports = function (mobile) {
   if (dataBuffer === null) {
-    load(__dirname + '/../data/phone.dat')
+    load()
   }
   return find(mobile)
 }
