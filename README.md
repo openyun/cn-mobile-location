@@ -31,3 +31,7 @@ curl http://localhost:3000/mobile/13488888888
   "timestamp": 1499345271
 }
 ```
+## JSONP支持
+```bash
+curl http://localhost:3000/mobile/13488888888?callback=xxx
+```
